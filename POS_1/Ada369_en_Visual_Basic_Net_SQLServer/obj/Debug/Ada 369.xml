@@ -1,0 +1,301 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ada 369
+</name>
+</assembly>
+<members>
+<member name="T:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources._39DOLARES">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.accesorio">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.advertencia">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.archivos_adjuntos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.azul">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.basedatos">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.boton_de_stop_de_un_reproductor_de_video">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.Caja_activa">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.caja_eliminada">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.Caja_eliminada_oficial">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.Caja_recien_creada">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.calendario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.candado">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.Candy_Candy_candy_candy_9421203_572_508">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.carrito_de_tienda_online">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.carro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.cerveza">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.clip">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.COBROSSSS">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.COBRSSSS">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.config_redentor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.correcto_simbolo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.creditocobrar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.creditopagar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.dom">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.efectivo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.etiqueta">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.gogeta">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.goku">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.gokuqueda">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.homero">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.icon_BLACK">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.inventario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.megafono">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.menu_BLACK">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.Menu_redentor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.menuCajas_claro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.monedas">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.monster">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.naranja">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.naruto">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.negro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.notificacion_BLACK">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.notificacion_BLACK2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.notificacion_redentor">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.nube_secundaria">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.nube_sincroizacio">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.pacman">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.pasar_al_siguiente">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.reportes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.restaurar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.sakura">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.trofeo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.venta">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Ada369_en_Visual_Basic_Net_SQLServer.My.Resources.Resources.verde">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

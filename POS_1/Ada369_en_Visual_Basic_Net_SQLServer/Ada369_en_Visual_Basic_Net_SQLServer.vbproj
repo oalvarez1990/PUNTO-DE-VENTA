@@ -1,0 +1,1138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2B7670F-780F-453D-B25B-FAECE773C39C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Ada369_en_Visual_Basic_Net_SQLServer.My.MyApplication</StartupObject>
+    <RootNamespace>Ada369_en_Visual_Basic_Net_SQLServer</RootNamespace>
+    <AssemblyName>Ada 369</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ada 369.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ada 369.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ada369.com.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="UIDC">
+      <HintPath>..\UIDC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONEXION\CONEXIONMAESTRA.vb" />
+    <Compile Include="CONEXION\CONEXION_MANUAL.Designer.vb">
+      <DependentUpon>CONEXION_MANUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CONEXION\CONEXION_MANUAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CONEXION\Conexion_web.vb" />
+    <Compile Include="LIBRERIAS\Agregar_ceros_adelante_De_numero.vb" />
+    <Compile Include="LIBRERIAS\Cambiar_bordes_a_texboxvb.vb" />
+    <Compile Include="LIBRERIAS\cerrar_proceso.vb" />
+    <Compile Include="LIBRERIAS\Class1.vb" />
+    <Compile Include="LIBRERIAS\Class2.vb" />
+    <Compile Include="LIBRERIAS\Class3.vb" />
+    <Compile Include="LIBRERIAS\DataHelper.vb" />
+    <Compile Include="LIBRERIAS\Desencryptacion.vb" />
+    <Compile Include="LIBRERIAS\Encryptacion.vb" />
+    <Compile Include="LIBRERIAS\Encryptar_en_texto.vb" />
+    <Compile Include="LIBRERIAS\MyButtonCell.vb" />
+    <Compile Include="LIBRERIAS\Numeros_separadores.vb" />
+    <Compile Include="LIBRERIAS\Obtener_ip.vb" />
+    <Compile Include="LIBRERIAS\Tamaño_automatico_de_datatables.vb" />
+    <Compile Include="LIBRERIAS\total_en_letras.vb" />
+    <Compile Include="LIBRERIAS\vForm.vb" />
+    <Compile Include="MODULOS\Admin_nivel_dios\DASHBOARD_PRINCIPAL.Designer.vb">
+      <DependentUpon>DASHBOARD_PRINCIPAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Admin_nivel_dios\DASHBOARD_PRINCIPAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\APERTURA_DE_CREDITOS\APERTURA_DE_CREDITOS.Designer.vb">
+      <DependentUpon>APERTURA_DE_CREDITOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\APERTURA_DE_CREDITOS\APERTURA_DE_CREDITOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENCIA\ASISTENCIAS.Designer.vb">
+      <DependentUpon>ASISTENCIAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENCIA\ASISTENCIAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENCIA\CONFIGURACION_DE_HORARIOS_PRECIOS.Designer.vb">
+      <DependentUpon>CONFIGURACION_DE_HORARIOS_PRECIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENCIA\CONFIGURACION_DE_HORARIOS_PRECIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Asistente_de_instalacion_de_Caja_Secundaria\Conexion_caja_secundaria.Designer.vb">
+      <DependentUpon>Conexion_caja_secundaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Asistente_de_instalacion_de_Caja_Secundaria\Conexion_caja_secundaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Asistente_de_instalacion_de_Caja_Secundaria\REGISTRO_DE_CAJA.Designer.vb">
+      <DependentUpon>REGISTRO_DE_CAJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Asistente_de_instalacion_de_Caja_Secundaria\REGISTRO_DE_CAJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.Designer.vb">
+      <DependentUpon>Eleccion_Servidor_o_remoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Instalacion_del_servidorSQL.Designer.vb">
+      <DependentUpon>Instalacion_del_servidorSQL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Instalacion_del_servidorSQL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Module1.vb" />
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.Designer.vb">
+      <DependentUpon>REGISTRO_DE_EMPRESA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\USUARIOS_AUTORIZADOS_AL_SISTEMA.Designer.vb">
+      <DependentUpon>USUARIOS_AUTORIZADOS_AL_SISTEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\USUARIOS_AUTORIZADOS_AL_SISTEMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\APERTURA_DE_CAJA.Designer.vb">
+      <DependentUpon>APERTURA_DE_CAJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\APERTURA_DE_CAJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\Cajas_form.Designer.vb">
+      <DependentUpon>Cajas_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\Cajas_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\CIERRE_DE_CAJA.Designer.vb">
+      <DependentUpon>CIERRE_DE_CAJA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\CIERRE_DE_CAJA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\Cierre_de_turno.Designer.vb">
+      <DependentUpon>Cierre_de_turno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\Cierre_de_turno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\clientes.Designer.vb">
+      <DependentUpon>clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\Registro_clientes.Designer.vb">
+      <DependentUpon>Registro_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\Registro_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\Registro_de_proveedores.Designer.vb">
+      <DependentUpon>Registro_de_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES_PROVEEDORES\Registro_de_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\COBROS\cobro_a_clientes.Designer.vb">
+      <DependentUpon>cobro_a_clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\COBROS\cobro_a_clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\COBROS\Medios_de_Cobros.Designer.vb">
+      <DependentUpon>Medios_de_Cobros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\COBROS\Medios_de_Cobros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\cambiodecontraseña.Designer.vb">
+      <DependentUpon>cambiodecontraseña.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\cambiodecontraseña.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\Correo.vb" />
+    <Compile Include="MODULOS\CONFIGURACION\GESTION_DE_BASE_DE_DATOS.Designer.vb">
+      <DependentUpon>GESTION_DE_BASE_DE_DATOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\GESTION_DE_BASE_DE_DATOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\lineasOK.Designer.vb">
+      <DependentUpon>lineasOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\lineasOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\MyTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\PANEL_CONFIGURACIONES.Designer.vb">
+      <DependentUpon>PANEL_CONFIGURACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\PANEL_CONFIGURACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\UND.Designer.vb">
+      <DependentUpon>UND.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CONFIGURACION\UND.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\COPIAS DE SEGURIDAD BD\GENERADOR_DE_COPIAS_AUTOMATICO.Designer.vb">
+      <DependentUpon>GENERADOR_DE_COPIAS_AUTOMATICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\COPIAS DE SEGURIDAD BD\GENERADOR_DE_COPIAS_AUTOMATICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\COPIAS DE SEGURIDAD BD\GENERAR_COPIAS_DE_SEGURIDAD.Designer.vb">
+      <DependentUpon>GENERAR_COPIAS_DE_SEGURIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\COPIAS DE SEGURIDAD BD\GENERAR_COPIAS_DE_SEGURIDAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\DEMOS_DEL_CURSO\DASBOARD_DEMO.Designer.vb">
+      <DependentUpon>DASBOARD_DEMO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\DEMOS_DEL_CURSO\DASBOARD_DEMO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\DISEÑADOR_DE_COMPROBANTES\Ticket.Designer.vb">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\DISEÑADOR_DE_COMPROBANTES\Ticket.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\EMPRESA CONFIGURACION\EMPRESA_CONFIG.Designer.vb">
+      <DependentUpon>EMPRESA_CONFIG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\EMPRESA CONFIGURACION\EMPRESA_CONFIG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ENVIO_A_CORREO\Configurar_envio_a_correo.Designer.vb">
+      <DependentUpon>Configurar_envio_a_correo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\ENVIO_A_CORREO\Configurar_envio_a_correo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\ENVIO_A_CORREO\ENVIO_A_CORREOS.vb" />
+    <Compile Include="MODULOS\FACTURACION_ELECTRONICA_PERU\CLIENTES_FACTURACION_PERU.Designer.vb">
+      <DependentUpon>CLIENTES_FACTURACION_PERU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\FACTURACION_ELECTRONICA_PERU\CLIENTES_FACTURACION_PERU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Flujo de caja Beta\Flujo_caja.Designer.vb">
+      <DependentUpon>Flujo_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Flujo de caja Beta\Flujo_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Flujo de caja Beta\Flujo_de_Caja_report.Designer.vb">
+      <DependentUpon>Flujo_de_Caja_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Flujo de caja Beta\Flujo_de_Caja_report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Flujo_de_caja\Flujo_de_caja.Designer.vb">
+      <DependentUpon>Flujo_de_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\Flujo_de_caja\Flujo_de_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GASTOS_VARIOS\GASTOS_VARIOS_FORM.Designer.vb">
+      <DependentUpon>GASTOS_VARIOS_FORM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GASTOS_VARIOS\GASTOS_VARIOS_FORM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GASTOS_VARIOS\LISTADO_GASTOS_VARIOS.Designer.vb">
+      <DependentUpon>LISTADO_GASTOS_VARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GASTOS_VARIOS\LISTADO_GASTOS_VARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GASTOS_VARIOS\Ver_gastos_ingresos.Designer.vb">
+      <DependentUpon>Ver_gastos_ingresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GASTOS_VARIOS\Ver_gastos_ingresos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\GRUPOS_DE_GASTOS_Y_INGRESOS_VARIOS\CONCEPTOS_GASTOS_INGRESOS.Designer.vb">
+      <DependentUpon>CONCEPTOS_GASTOS_INGRESOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\GRUPOS_DE_GASTOS_Y_INGRESOS_VARIOS\CONCEPTOS_GASTOS_INGRESOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\IMPRESORAS\Admin_de_IMPRESORAS.Designer.vb">
+      <DependentUpon>Admin_de_IMPRESORAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\IMPRESORAS\Admin_de_IMPRESORAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INGRESOS_VARIOS\INGRESOS_VARIOS_OKA.Designer.vb">
+      <DependentUpon>INGRESOS_VARIOS_OKA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INGRESOS_VARIOS\INGRESOS_VARIOS_OKA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INGRESOS_VARIOS\LISTAR_INGRESOS_VARIOS.Designer.vb">
+      <DependentUpon>LISTAR_INGRESOS_VARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INGRESOS_VARIOS\LISTAR_INGRESOS_VARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\F_MOVIMIENTOS_KARDEX.Designer.vb">
+      <DependentUpon>F_MOVIMIENTOS_KARDEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\F_MOVIMIENTOS_KARDEX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\INVENTARIO.Designer.vb">
+      <DependentUpon>INVENTARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\INVENTARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\KARDEX_ENTRADA_DE_PRODUCTOS.Designer.vb">
+      <DependentUpon>KARDEX_ENTRADA_DE_PRODUCTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\KARDEX_ENTRADA_DE_PRODUCTOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\KARDEX_REGISTRO.Designer.vb">
+      <DependentUpon>KARDEX_REGISTRO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIOS_KARDEX\KARDEX_REGISTRO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\LICENCIAS_MENBRESIAS\Membresias.Designer.vb">
+      <DependentUpon>Membresias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\LICENCIAS_MENBRESIAS\Membresias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN\Cambio_de_usuario.Designer.vb">
+      <DependentUpon>Cambio_de_usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN\Cambio_de_usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN\LOGIN.Designer.vb">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN\LOGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MASCARAS\MASCARA1.Designer.vb">
+      <DependentUpon>MASCARA1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\MASCARAS\MASCARA1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\MASCARAS\MENSAJES_EMERGENTE.vb" />
+    <Compile Include="MODULOS\MONEDERO_DEL_AHORRO\Admin_monedero.Designer.vb">
+      <DependentUpon>Admin_monedero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\MONEDERO_DEL_AHORRO\Admin_monedero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PAGOS\PAGOS_PROVEEDOSOKA.Designer.vb">
+      <DependentUpon>PAGOS_PROVEEDOSOKA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PAGOS\PAGOS_PROVEEDOSOKA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PANTALLA DE PRESENTACION\PRESENTACION_INICIAL.Designer.vb">
+      <DependentUpon>PRESENTACION_INICIAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PANTALLA DE PRESENTACION\PRESENTACION_INICIAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PEDIDOS_Cotizaciones\PROFORMAS.Designer.vb">
+      <DependentUpon>PROFORMAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PEDIDOS_Cotizaciones\PROFORMAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCCION\PanelExtended.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCCION\Settings.vb" />
+    <Compile Include="MODULOS\PRODUCTOS\Asistente_de_importacionExcel.Designer.vb">
+      <DependentUpon>Asistente_de_importacionExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\Asistente_de_importacionExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\productosOK.Designer.vb">
+      <DependentUpon>productosOK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\productosOK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\COMPROBANTES DE COBROS Y PAGOS\Comproante_de_cobro.Designer.vb">
+      <DependentUpon>Comproante_de_cobro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\COMPROBANTES DE COBROS Y PAGOS\Comproante_de_cobro.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\COMPROBANTES DE COBROS Y PAGOS\Comprobante_de_cobro_Form.Designer.vb">
+      <DependentUpon>Comprobante_de_cobro_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\COMPROBANTES DE COBROS Y PAGOS\Comprobante_de_cobro_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\CUENTAS_POR_COBRAR\cuentas_por_cobrar.Designer.vb">
+      <DependentUpon>cuentas_por_cobrar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\CUENTAS_POR_COBRAR\cuentas_por_cobrar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\Cuentas_por_pagar\Cuentas_pagar.Designer.vb">
+      <DependentUpon>Cuentas_pagar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\Cuentas_por_pagar\Cuentas_pagar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\Impresion_de_comprobantes\Ticket_Form_Factura_boleta.Designer.vb">
+      <DependentUpon>Ticket_Form_Factura_boleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\Impresion_de_comprobantes\Ticket_Form_Factura_boleta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\Impresion_de_comprobantes\Ticket_report.Designer.vb">
+      <DependentUpon>Ticket_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\Impresion_de_comprobantes\Ticket_report.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\MENU_dE_REPORTES_OI.Designer.vb">
+      <DependentUpon>MENU_dE_REPORTES_OI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\MENU_dE_REPORTES_OI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\PRUEBAS\REPORT_PRUEBA.Designer.vb">
+      <DependentUpon>REPORT_PRUEBA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\PRUEBAS\REPORT_PRUEBA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_CAJA\reporte_cierre_de_caja_form.Designer.vb">
+      <DependentUpon>reporte_cierre_de_caja_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_CAJA\reporte_cierre_de_caja_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_CAJA\Report_cierre_De_turno.Designer.vb">
+      <DependentUpon>Report_cierre_De_turno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_CAJA\Report_cierre_De_turno.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormInventariosBAjos.Designer.vb">
+      <DependentUpon>FormInventariosBAjos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormInventariosBAjos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormInventariosTodos.Designer.vb">
+      <DependentUpon>FormInventariosTodos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormInventariosTodos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormMovimientosBuscar.Designer.vb">
+      <DependentUpon>FormMovimientosBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormMovimientosBuscar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormReporteMovimientosFILTROS.Designer.vb">
+      <DependentUpon>FormReporteMovimientosFILTROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormReporteMovimientosFILTROS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FORM_MOVIMIENTOS_FILTROS_ACUMULADOS.Designer.vb">
+      <DependentUpon>FORM_MOVIMIENTOS_FILTROS_ACUMULADOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FORM_MOVIMIENTOS_FILTROS_ACUMULADOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FORM_PRODUCTOS_VENCIDOS.Designer.vb">
+      <DependentUpon>FORM_PRODUCTOS_VENCIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FORM_PRODUCTOS_VENCIDOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\REPORTE_FORM_PRUEBA.Designer.vb">
+      <DependentUpon>REPORTE_FORM_PRUEBA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\REPORTE_FORM_PRUEBA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Reporte_Movimientos_con_filtros.Designer.vb">
+      <DependentUpon>Reporte_Movimientos_con_filtros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Reporte_Movimientos_con_filtros.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportInventariosBajos.Designer.vb">
+      <DependentUpon>ReportInventariosBajos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportInventariosBajos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportInventarios_Todos.Designer.vb">
+      <DependentUpon>ReportInventarios_Todos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportInventarios_Todos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportMovimientosBuscar.Designer.vb">
+      <DependentUpon>ReportMovimientosBuscar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportMovimientosBuscar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Report_movimientos_filtros_acumulados.Designer.vb">
+      <DependentUpon>Report_movimientos_filtros_acumulados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Report_movimientos_filtros_acumulados.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Report_productos_vencidos.Designer.vb">
+      <DependentUpon>Report_productos_vencidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Report_productos_vencidos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\Reporte_de_Kardex\ReportKARDEX_Movimientos.Designer.vb">
+      <DependentUpon>ReportKARDEX_Movimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\Reporte_de_Kardex\ReportKARDEX_Movimientos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTE_DE_VENTAS\Reporte_de_ventas_por_empleado.Designer.vb">
+      <DependentUpon>Reporte_de_ventas_por_empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTE_DE_VENTAS\Reporte_de_ventas_por_empleado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTE_DE_VENTAS\ReportRESUMENVentas.Designer.vb">
+      <DependentUpon>ReportRESUMENVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTE_DE_VENTAS\ReportRESUMENVentas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\SERIALIZACION_DE_COMPROBANTES\SERIALIZACION.Designer.vb">
+      <DependentUpon>SERIALIZACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\SERIALIZACION_DE_COMPROBANTES\SERIALIZACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\USUARIOS_Y_PERMISOS\usuariosok.Designer.vb">
+      <DependentUpon>usuariosok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\USUARIOS_Y_PERMISOS\usuariosok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\AGREGAR_VARIAS_CANTIDADES_DE_PRODUCTOS.Designer.vb">
+      <DependentUpon>AGREGAR_VARIAS_CANTIDADES_DE_PRODUCTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\AGREGAR_VARIAS_CANTIDADES_DE_PRODUCTOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Anuncio_tienes_ventas_en_espera.Designer.vb">
+      <DependentUpon>Anuncio_tienes_ventas_en_espera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Anuncio_tienes_ventas_en_espera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\CAMBIAR_PRECIOS_MANUALMENTE.Designer.vb">
+      <DependentUpon>CAMBIAR_PRECIOS_MANUALMENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\CAMBIAR_PRECIOS_MANUALMENTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\CANTIDAD_A_GRANEL.Designer.vb">
+      <DependentUpon>CANTIDAD_A_GRANEL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\CANTIDAD_A_GRANEL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\ELECCION_DE_SALIDA_DE_KARDEX.Designer.vb">
+      <DependentUpon>ELECCION_DE_SALIDA_DE_KARDEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\ELECCION_DE_SALIDA_DE_KARDEX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\HISTORIAL_DE_VENTAS.Designer.vb">
+      <DependentUpon>HISTORIAL_DE_VENTAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\HISTORIAL_DE_VENTAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\LISTAR_MOVIMIENTOS_DE_KARDEX.Designer.vb">
+      <DependentUpon>LISTAR_MOVIMIENTOS_DE_KARDEX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\LISTAR_MOVIMIENTOS_DE_KARDEX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\MEDIOS_DE_PAGO.Designer.vb">
+      <DependentUpon>MEDIOS_DE_PAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\MEDIOS_DE_PAGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\CANTIDAD_DE_PRODUCTOS_VARIOS.Designer.vb">
+      <DependentUpon>CANTIDAD_DE_PRODUCTOS_VARIOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\CANTIDAD_DE_PRODUCTOS_VARIOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\PEDIDOS_DE_COMPRA_OKA.Designer.vb">
+      <DependentUpon>PEDIDOS_DE_COMPRA_OKA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\PEDIDOS_DE_COMPRA_OKA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\PEDIDOS_VENTA_OKI.Designer.vb">
+      <DependentUpon>PEDIDOS_VENTA_OKI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\PEDIDOS_VENTA_OKI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Producto_servicio_rapido.Designer.vb">
+      <DependentUpon>Producto_servicio_rapido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Producto_servicio_rapido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Seleccionar_lotes.Designer.vb">
+      <DependentUpon>Seleccionar_lotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Seleccionar_lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Ventas_en_espera.Designer.vb">
+      <DependentUpon>Ventas_en_espera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\Ventas_en_espera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\VENTAS_MENU_PRINCIPAL.Designer.vb">
+      <DependentUpon>VENTAS_MENU_PRINCIPAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_MENU_PRINCIPAL\VENTAS_MENU_PRINCIPAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CONEXION\CONEXION_MANUAL.resx">
+      <DependentUpon>CONEXION_MANUAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Admin_nivel_dios\DASHBOARD_PRINCIPAL.resx">
+      <DependentUpon>DASHBOARD_PRINCIPAL.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\APERTURA_DE_CREDITOS\APERTURA_DE_CREDITOS.resx">
+      <DependentUpon>APERTURA_DE_CREDITOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ASISTENCIA\ASISTENCIAS.resx">
+      <DependentUpon>ASISTENCIAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ASISTENCIA\CONFIGURACION_DE_HORARIOS_PRECIOS.resx">
+      <DependentUpon>CONFIGURACION_DE_HORARIOS_PRECIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Asistente_de_instalacion_de_Caja_Secundaria\Conexion_caja_secundaria.resx">
+      <DependentUpon>Conexion_caja_secundaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Asistente_de_instalacion_de_Caja_Secundaria\REGISTRO_DE_CAJA.resx">
+      <DependentUpon>REGISTRO_DE_CAJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Eleccion_Servidor_o_remoto.resx">
+      <DependentUpon>Eleccion_Servidor_o_remoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\Instalacion_del_servidorSQL.resx">
+      <DependentUpon>Instalacion_del_servidorSQL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\REGISTRO_DE_EMPRESA.resx">
+      <DependentUpon>REGISTRO_DE_EMPRESA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ASISTENTE_DE_INSTALACION_servidor\USUARIOS_AUTORIZADOS_AL_SISTEMA.resx">
+      <DependentUpon>USUARIOS_AUTORIZADOS_AL_SISTEMA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CAJA\APERTURA_DE_CAJA.resx">
+      <DependentUpon>APERTURA_DE_CAJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CAJA\Cajas_form.resx">
+      <DependentUpon>Cajas_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CAJA\CIERRE_DE_CAJA.resx">
+      <DependentUpon>CIERRE_DE_CAJA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CAJA\Cierre_de_turno.resx">
+      <DependentUpon>Cierre_de_turno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CLIENTES_PROVEEDORES\clientes.resx">
+      <DependentUpon>clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CLIENTES_PROVEEDORES\Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CLIENTES_PROVEEDORES\Registro_clientes.resx">
+      <DependentUpon>Registro_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CLIENTES_PROVEEDORES\Registro_de_proveedores.resx">
+      <DependentUpon>Registro_de_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\COBROS\cobro_a_clientes.resx">
+      <DependentUpon>cobro_a_clientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\COBROS\Medios_de_Cobros.resx">
+      <DependentUpon>Medios_de_Cobros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CONFIGURACION\cambiodecontraseña.resx">
+      <DependentUpon>cambiodecontraseña.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CONFIGURACION\GESTION_DE_BASE_DE_DATOS.resx">
+      <DependentUpon>GESTION_DE_BASE_DE_DATOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CONFIGURACION\lineasOK.resx">
+      <DependentUpon>lineasOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CONFIGURACION\PANEL_CONFIGURACIONES.resx">
+      <DependentUpon>PANEL_CONFIGURACIONES.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CONFIGURACION\UND.resx">
+      <DependentUpon>UND.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\COPIAS DE SEGURIDAD BD\GENERADOR_DE_COPIAS_AUTOMATICO.resx">
+      <DependentUpon>GENERADOR_DE_COPIAS_AUTOMATICO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\COPIAS DE SEGURIDAD BD\GENERAR_COPIAS_DE_SEGURIDAD.resx">
+      <DependentUpon>GENERAR_COPIAS_DE_SEGURIDAD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\DEMOS_DEL_CURSO\DASBOARD_DEMO.resx">
+      <DependentUpon>DASBOARD_DEMO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\DISEÑADOR_DE_COMPROBANTES\Ticket.resx">
+      <DependentUpon>Ticket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\EMPRESA CONFIGURACION\EMPRESA_CONFIG.resx">
+      <DependentUpon>EMPRESA_CONFIG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\ENVIO_A_CORREO\Configurar_envio_a_correo.resx">
+      <DependentUpon>Configurar_envio_a_correo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\FACTURACION_ELECTRONICA_PERU\CLIENTES_FACTURACION_PERU.resx">
+      <DependentUpon>CLIENTES_FACTURACION_PERU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Flujo de caja Beta\Flujo_caja.resx">
+      <DependentUpon>Flujo_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Flujo de caja Beta\Flujo_de_Caja_report.resx">
+      <DependentUpon>Flujo_de_Caja_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Flujo_de_caja\Flujo_de_caja.resx">
+      <DependentUpon>Flujo_de_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GASTOS_VARIOS\GASTOS_VARIOS_FORM.resx">
+      <DependentUpon>GASTOS_VARIOS_FORM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GASTOS_VARIOS\LISTADO_GASTOS_VARIOS.resx">
+      <DependentUpon>LISTADO_GASTOS_VARIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GASTOS_VARIOS\Ver_gastos_ingresos.resx">
+      <DependentUpon>Ver_gastos_ingresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\GRUPOS_DE_GASTOS_Y_INGRESOS_VARIOS\CONCEPTOS_GASTOS_INGRESOS.resx">
+      <DependentUpon>CONCEPTOS_GASTOS_INGRESOS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\IMPRESORAS\Admin_de_IMPRESORAS.resx">
+      <DependentUpon>Admin_de_IMPRESORAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INGRESOS_VARIOS\INGRESOS_VARIOS_OKA.resx">
+      <DependentUpon>INGRESOS_VARIOS_OKA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INGRESOS_VARIOS\LISTAR_INGRESOS_VARIOS.resx">
+      <DependentUpon>LISTAR_INGRESOS_VARIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INVENTARIOS_KARDEX\F_MOVIMIENTOS_KARDEX.resx">
+      <DependentUpon>F_MOVIMIENTOS_KARDEX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INVENTARIOS_KARDEX\INVENTARIO.resx">
+      <DependentUpon>INVENTARIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INVENTARIOS_KARDEX\KARDEX_ENTRADA_DE_PRODUCTOS.resx">
+      <DependentUpon>KARDEX_ENTRADA_DE_PRODUCTOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INVENTARIOS_KARDEX\KARDEX_REGISTRO.resx">
+      <DependentUpon>KARDEX_REGISTRO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\LICENCIAS_MENBRESIAS\Membresias.resx">
+      <DependentUpon>Membresias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\LOGIN\Cambio_de_usuario.resx">
+      <DependentUpon>Cambio_de_usuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\LOGIN\LOGIN.resx">
+      <DependentUpon>LOGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\MASCARAS\MASCARA1.resx">
+      <DependentUpon>MASCARA1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\MONEDERO_DEL_AHORRO\Admin_monedero.resx">
+      <DependentUpon>Admin_monedero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PAGOS\PAGOS_PROVEEDOSOKA.resx">
+      <DependentUpon>PAGOS_PROVEEDOSOKA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PANTALLA DE PRESENTACION\PRESENTACION_INICIAL.resx">
+      <DependentUpon>PRESENTACION_INICIAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PEDIDOS_Cotizaciones\PROFORMAS.resx">
+      <DependentUpon>PROFORMAS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\Asistente_de_importacionExcel.resx">
+      <DependentUpon>Asistente_de_importacionExcel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\productosOK.resx">
+      <DependentUpon>productosOK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\COMPROBANTES DE COBROS Y PAGOS\Comproante_de_cobro.resx">
+      <DependentUpon>Comproante_de_cobro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\COMPROBANTES DE COBROS Y PAGOS\Comprobante_de_cobro_Form.resx">
+      <DependentUpon>Comprobante_de_cobro_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\CUENTAS_POR_COBRAR\cuentas_por_cobrar.resx">
+      <DependentUpon>cuentas_por_cobrar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\Cuentas_por_pagar\Cuentas_pagar.resx">
+      <DependentUpon>Cuentas_pagar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\Impresion_de_comprobantes\Ticket_Form_Factura_boleta.resx">
+      <DependentUpon>Ticket_Form_Factura_boleta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\Impresion_de_comprobantes\Ticket_report.resx">
+      <DependentUpon>Ticket_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\MENU_dE_REPORTES_OI.resx">
+      <DependentUpon>MENU_dE_REPORTES_OI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\PRUEBAS\REPORT_PRUEBA.resx">
+      <DependentUpon>REPORT_PRUEBA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_CAJA\reporte_cierre_de_caja_form.resx">
+      <DependentUpon>reporte_cierre_de_caja_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_CAJA\Report_cierre_De_turno.resx">
+      <DependentUpon>Report_cierre_De_turno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormInventariosBAjos.resx">
+      <DependentUpon>FormInventariosBAjos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormInventariosTodos.resx">
+      <DependentUpon>FormInventariosTodos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormMovimientosBuscar.resx">
+      <DependentUpon>FormMovimientosBuscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FormReporteMovimientosFILTROS.resx">
+      <DependentUpon>FormReporteMovimientosFILTROS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FORM_MOVIMIENTOS_FILTROS_ACUMULADOS.resx">
+      <DependentUpon>FORM_MOVIMIENTOS_FILTROS_ACUMULADOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\FORM_PRODUCTOS_VENCIDOS.resx">
+      <DependentUpon>FORM_PRODUCTOS_VENCIDOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\REPORTE_FORM_PRUEBA.resx">
+      <DependentUpon>REPORTE_FORM_PRUEBA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Reporte_Movimientos_con_filtros.resx">
+      <DependentUpon>Reporte_Movimientos_con_filtros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportInventariosBajos.resx">
+      <DependentUpon>ReportInventariosBajos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportInventarios_Todos.resx">
+      <DependentUpon>ReportInventarios_Todos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\ReportMovimientosBuscar.resx">
+      <DependentUpon>ReportMovimientosBuscar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Report_movimientos_filtros_acumulados.resx">
+      <DependentUpon>Report_movimientos_filtros_acumulados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_INVENTARIOS\Report_productos_vencidos.resx">
+      <DependentUpon>Report_productos_vencidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\Reporte_de_Kardex\ReportKARDEX_Movimientos.resx">
+      <DependentUpon>ReportKARDEX_Movimientos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTE_DE_VENTAS\Reporte_de_ventas_por_empleado.resx">
+      <DependentUpon>Reporte_de_ventas_por_empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTE_DE_VENTAS\ReportRESUMENVentas.resx">
+      <DependentUpon>ReportRESUMENVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\SERIALIZACION_DE_COMPROBANTES\SERIALIZACION.resx">
+      <DependentUpon>SERIALIZACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\USUARIOS_Y_PERMISOS\usuariosok.resx">
+      <DependentUpon>usuariosok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\AGREGAR_VARIAS_CANTIDADES_DE_PRODUCTOS.resx">
+      <DependentUpon>AGREGAR_VARIAS_CANTIDADES_DE_PRODUCTOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\Anuncio_tienes_ventas_en_espera.resx">
+      <DependentUpon>Anuncio_tienes_ventas_en_espera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\CAMBIAR_PRECIOS_MANUALMENTE.resx">
+      <DependentUpon>CAMBIAR_PRECIOS_MANUALMENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\CANTIDAD_A_GRANEL.resx">
+      <DependentUpon>CANTIDAD_A_GRANEL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\ELECCION_DE_SALIDA_DE_KARDEX.resx">
+      <DependentUpon>ELECCION_DE_SALIDA_DE_KARDEX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\HISTORIAL_DE_VENTAS.resx">
+      <DependentUpon>HISTORIAL_DE_VENTAS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\LISTAR_MOVIMIENTOS_DE_KARDEX.resx">
+      <DependentUpon>LISTAR_MOVIMIENTOS_DE_KARDEX.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\MEDIOS_DE_PAGO.resx">
+      <DependentUpon>MEDIOS_DE_PAGO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\CANTIDAD_DE_PRODUCTOS_VARIOS.resx">
+      <DependentUpon>CANTIDAD_DE_PRODUCTOS_VARIOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\PEDIDOS_DE_COMPRA_OKA.resx">
+      <DependentUpon>PEDIDOS_DE_COMPRA_OKA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\PEDIDOS\PEDIDOS_VENTA_OKI.resx">
+      <DependentUpon>PEDIDOS_VENTA_OKI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\Producto_servicio_rapido.resx">
+      <DependentUpon>Producto_servicio_rapido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\Seleccionar_lotes.resx">
+      <DependentUpon>Seleccionar_lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\Ventas_en_espera.resx">
+      <DependentUpon>Ventas_en_espera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_MENU_PRINCIPAL\VENTAS_MENU_PRINCIPAL.resx">
+      <DependentUpon>VENTAS_MENU_PRINCIPAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ada369.com.ico" />
+    <Content Include="MODULOS\HTMLPage1.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MODULOS\LOGIN\HTMLPage1.html" />
+    <None Include="Resources\azul.png" />
+    <None Include="Resources\naranja.png" />
+    <None Include="Resources\negro.png" />
+    <None Include="Resources\verde.png" />
+    <None Include="Resources\restaurar.png" />
+    <None Include="Resources\basedatos.png" />
+    <None Include="Resources\reportes.png" />
+    <None Include="Resources\creditocobrar.png" />
+    <None Include="Resources\creditopagar.png" />
+    <None Include="Resources\inventario.png" />
+    <None Include="Resources\dom.png" />
+    <None Include="Resources\venta.png" />
+    <None Include="Resources\trofeo.png" />
+    <None Include="Resources\sakura.png" />
+    <None Include="Resources\pasar-al-siguiente.png" />
+    <None Include="Resources\pacman.png" />
+    <None Include="Resources\nube_sincroizacio.png" />
+    <None Include="Resources\nube_secundaria.png" />
+    <None Include="Resources\notificacion_redentor.png" />
+    <None Include="Resources\notificacion_BLACK2.png" />
+    <None Include="Resources\notificacion_BLACK.png" />
+    <None Include="Resources\naruto.png" />
+    <None Include="Resources\monster.jpg" />
+    <None Include="Resources\monedas.png" />
+    <None Include="Resources\menuCajas_claro.png" />
+    <None Include="Resources\Menu_redentor.png" />
+    <None Include="Resources\menu_BLACK.png" />
+    <None Include="Resources\megafono.png" />
+    <None Include="Resources\icon_BLACK.png" />
+    <None Include="Resources\homero.jpg" />
+    <None Include="Resources\gokuqueda.jpg" />
+    <None Include="Resources\goku.jpg" />
+    <None Include="Resources\gogeta.jpg" />
+    <None Include="Resources\etiqueta.png" />
+    <None Include="Resources\efectivo.png" />
+    <None Include="Resources\correcto-simbolo.png" />
+    <None Include="Resources\config_redentor.png" />
+    <None Include="Resources\COBRSSSS.bmp" />
+    <None Include="Resources\COBROSSSS.png" />
+    <None Include="Resources\clip.png" />
+    <None Include="Resources\cerveza.png" />
+    <None Include="Resources\carro.png" />
+    <None Include="Resources\carrito-de-tienda-online.png" />
+    <None Include="Resources\Candy-Candy-candy-candy-9421203-572-508.jpg" />
+    <None Include="Resources\candado.png" />
+    <None Include="Resources\calendario.png" />
+    <None Include="Resources\Caja_recien_creada.png" />
+    <None Include="Resources\Caja_eliminada_oficial.png" />
+    <None Include="Resources\caja_eliminada.png" />
+    <None Include="Resources\Caja_activa.png" />
+    <None Include="Resources\boton-de-stop-de-un-reproductor-de-video.png" />
+    <None Include="Resources\archivos-adjuntos.png" />
+    <None Include="Resources\advertencia.png" />
+    <None Include="Resources\accesorio.png" />
+    <None Include="Resources\39DOLARES.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MODULOS\CONFIGURACION\Temas\" />
+    <Folder Include="MODULOS\COTIZACIONES\" />
+    <Folder Include="MODULOS\REPORTES\REPORTES_DE_KARDEX\REPORTES_DE_MOVIMIENTOS\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
